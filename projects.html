@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .navmenu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            margin-right: 50px;
+        }
+
+        .navmenu li {
+            display: inline;
+        }
+
+        .navmenu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navmenu a:hover {
+            color: #007bff;
+        }
+
+        .projects-container {
+            max-width: 1200px;
+            margin: 120px auto 50px;
+            padding: 0 20px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .project-link:hover {
+            background-color: #0056b3;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .movie-logo {
+            object-fit: contain;
+            padding: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo">Portfolio</a>
+        <ul class="navmenu">
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="projects-container">
+        <h1 class="section-title">My Projects</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="laliga_logo.png" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">Laliga Game Predictor</h2>
+                    <p class="project-description">
+                        Description: 
+                    </p>
+                    <a href="#" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="moviepic.png" alt="Project 2" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">Movie Recommender</h2>
+                    <p class="project-description">
+                        Description: 
+                    </p>
+                    <a href="https://github.com/manip1384/Movie_Recommender" class="project-link">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="gym.png" alt="Project 3" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">Fitness Website</h2>
+                    <p class="project-description">
+                        Description: 
+                    </p>
+                    <a href="https://manip1384.github.io/Mock-Gym-Website/index.html" class="project-link">
+                        <i class=""></i> Visit Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
